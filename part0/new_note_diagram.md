@@ -1,7 +1,8 @@
+```mermaid
 sequenceDiagram
     participant browser
     participant server
-
+    
     browser->>server: POST https://fullstack-exampleapp.herokuapp.com/new_note
     activate server
     server-->>browser: HTTP status code 302
@@ -26,3 +27,4 @@ sequenceDiagram
     activate server
     server-->>browser: [{ "content": "HTML is easy", "date": "2023-1-1" }, ... ]
     deactivate server
+```
